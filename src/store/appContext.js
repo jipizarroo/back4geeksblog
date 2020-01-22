@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import getState from './flux';
 
-export const Consumer = React.createContext(null);
+export const Context = React.createContext(null);
 
 const injectContext = PassedComponent => {
     const StoreWrapper = props =>{

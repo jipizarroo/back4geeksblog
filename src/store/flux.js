@@ -2,7 +2,7 @@ const getState = ({getStore, getActions, setStore}) => {
     return {
         store: {
             
-            path: 'http://localhost:5000/',
+            path: 'http://localhost:5000',
             username: '',
             password: '',
             currentUser: {}

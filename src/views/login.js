@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import { Consumer } from './../store/appContext';
+import { Context } from './../store/appContext';
 const Login = props => {
-    const {store, actions} = useContext(Consumer);
+    const {store, actions} = useContext(Context);
     return (
         <div className="container">
             <div className="row">
@@ -21,7 +21,7 @@ const Login = props => {
                             </div>
                         </div>
                         <div className="card-footer">
-                            <button className="btn btn-primary btn-block" onClick={() => actions.get.Login(props.history)}>
+                            <button className="btn btn-primary btn-block" onClick={() => actions.getLogin(props.history)}>
                                 Login
                             </button>
                         </div>
